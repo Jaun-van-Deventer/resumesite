@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Welcome to our Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="jaun-resume" href="jaun.html">
 </head>
 <body>
+
+<!--//////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////
+    Navbar -->
     <nav class="navbar bg-dark border-bottom border-body sticky-top" data-bs-theme="dark"">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Home</a>
+            <a class="navbar-brand" href="index.html">Homepage</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,14 +29,64 @@
             </div>
         </div>
     </nav>
-    <img class="img-fluid" src="resources/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="">
+
+<!--//////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////
+    Background Image -->
+    <div class="background"></div>
+    <!--//////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////
+    Particle Container -->
+    <div class="particle-container"></div>
+<!--//////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////
+    Headers -->
+    <h1 class="header">Welcome to my Portfolio</h1>
+    <h4 class="subheader">Please select the person you are looking for</h4>
+<!--//////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////
+    Selection Cards -->
+    <div class="container text-center profile-container">
+        <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="jaun.html"><img src="/resources/illustration-businessman_53876-5856.avif" alt="" class="img-fluid"></a>
+                        <h5 class="card-title">Jaun van Deventer</h5>
+                        <p class="card-text">Occupation: Web Developer<br>Location: Vanderbijlpark<br>Education: Udemy,FreeCodeCamp,W3Schools</p>
+                        <a href="jaun.html" class="btn btn-dark">Go to Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="chevonne.html"><img src="/resources/illustration-businesswoman_53876-5857.avif" alt="" class="img-fluid"></a>
+                        <h5 class="card-title">Chevonne Serfontein</h5>
+                        <p class="card-text">Occupation: Web Developer<br>Location: Vanderbijlpark<br>Education: North West University</p>
+                        <a href="chevonne.html" class="btn btn-dark">Go to Profile</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
+<!--//////////////////////////////////////////////////////////////////
 
-
-
-
+/////////////////////////////////////////////////////////////////////
+    Footer -->
+    <footer class="text-bg-dark text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023
+            <a class="text-light" href="jaun.html">Built by Jaun van Deventer</a>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
