@@ -1,0 +1,58 @@
+body {
+    background-image: url(/jaun-projects/swapi-api-test/resources/billy-huynh-W8KTS-mhFUE-unsplash.jpg);
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.header {
+    left: 50%;
+    transform: translate(-50%);
+    top: 1em ;
+    position: absolute;
+    width: 100%;
+    color: white;
+    text-align: center; 
+
+}
+
+.box {
+    height: 500px;
+    width: 30em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 5em;
+    z-index: 1;
+    background-image: url(/jaun-projects/swapi-api-test/resources/LESUTER-TOYS-22words-768x563.jpg);
+    background-position: center;
+    background-size:cover ;
+    color: white;   
+    justify-content: center;
+    text-align: center;
+}
+
+.data {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.button button {
+    position: absolute;
+    height: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 51em;
+    z-index: 1;
+    background-color: black;
+    color: white;
+    }

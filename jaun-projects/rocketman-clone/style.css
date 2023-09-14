@@ -1,0 +1,625 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links {
+  list-style: none;
+  position: relative;
+  margin: 0.625em auto;
+  left: auto;
+  top: 0;
+}
+
+.navigation {
+  display: flex;
+  max-width: 100%;
+  position: absolute;
+  height: 5em;
+  width: 100%;
+}
+
+.navigation a {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: auto;
+}
+
+li a,
+.blackbutton {
+  font-family: "Figtree", sans-serif;
+  font-weight: 300;
+  font-size: 1.25em;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 2.5em;
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: 1.25em;
+  display: flex;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 2.5em 5%;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+.nav-links li {
+  display: contents;
+  padding: 0 0.1875em;
+}
+
+.banner {
+  position: absolute;
+  /* background: rgb(2,0,36); */
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.55) 0%,
+      rgba(0, 0, 0, 0.55) 100%
+    ),
+    url(https://images.unsplash.com/photo-1517976487492-5750f3195933?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+  display: flexbox;
+  height: 42.1875em;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  box-sizing: border-box;
+}
+
+.maintenance {
+  position: relative;
+  color: white;
+  margin-top: 11.5625rem;
+  margin-left: 16%;
+  font-size: 4.375em;
+  font-weight: 300;
+  font-family: proxima-nova, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  display: flex;
+}
+
+.price {
+  position: relative;
+  color: white;
+  margin-top: -2.1875rem;
+  margin-left: 16%;
+  font-size: 1.875rem;
+  font-weight: 300;
+  font-family: proxima-nova, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  box-sizing: border-box;
+  display: flex;
+  /* padding-bottom: 40px; */
+}
+
+.contact {
+  position: relative;
+  text-transform: uppercase;
+  margin-top: 0.9375em;
+  margin-left: 16%;
+  padding: 0.625em 0.9375em;
+  height: 3.125em;
+  background-color: white;
+  font-weight: bold;
+  display: flexbox;
+  font-size: 1.125em;
+  font-family: "Nunito Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.container-2 {
+  position: absolute;
+  height: auto;
+  width: 100%;
+}
+
+.professionals {
+  position: relative;
+  display: block;
+  margin-top: 46.875rem;
+  text-align: center;
+  font-family: "Figtree", sans-serif;
+  font-weight: 300;
+  font-size: 1.875em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 2.5em;
+  justify-content: center;
+  margin-top: 53.125em;
+  padding-top: 4.375em;
+  width: 100%;
+}
+
+.item {
+  display: flexbox;
+}
+
+.block1 {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  height: 23.125em;
+  width: 35.625em;
+  background-image: url(Rocketman/nik-8yCmQODY2SY-unsplash.jpg);
+  background-size: cover;
+  border-left: 0.0625em solid rgba(0, 0, 0, 0.125);
+  border-right: 0.0625em solid rgba(0, 0, 0, 0.125);
+  border-top: 0.0625em solid rgba(0, 0, 0, 0.125);
+  display: flex;
+}
+
+.block2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border-left: 0.0625em solid rgba(0, 0, 0, 0.125);
+  border-right: 0.0625em solid rgba(0, 0, 0, 0.125);
+}
+
+.block3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  text-align: center;
+  border-left: 0.0625em solid rgba(0, 0, 0, 0.125);
+  border-right: 0.0625em solid rgba(0, 0, 0, 0.125);
+  border-bottom: 0.0625em solid rgba(0, 0, 0, 0.125);
+}
+
+.block4 {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  height: 23.125em;
+  width: 35.625em;
+  background-image: url(Rocketman/nasa-n463SoeSiVY-unsplash.jpg);
+  background-size: cover;
+  border-left: 0.0625em solid rgba(0, 0, 0, 0.125);
+  border-right: 0.0625em solid rgba(0, 0, 0, 0.125);
+  border-top: 0.0625em solid rgba(0, 0, 0, 0.125);
+  display: flex;
+}
+
+.block5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  border-left: 0.0625em solid rgba(0, 0, 0, 0.125);
+  border-right: 0.0625em solid rgba(0, 0, 0, 0.125);
+}
+
+.block6 {
+  text-align: center;
+  border-left: 0.0625em solid rgba(0, 0, 0, 0.125);
+  border-right: 0.0625em solid rgba(0, 0, 0, 0.125);
+  border-bottom: 0.0625em solid rgba(0, 0, 0, 0.125);
+}
+
+.block2 h5 {
+  text-align: center;
+  font-size: 2.1875em;
+  font-weight: 800;
+  font-style: normal;
+  font-family: "Figtree", sans-serif;
+}
+
+.block2 p {
+  text-align: center;
+  font-size: 1.125em;
+  font-weight: 800;
+  font-style: normal;
+  font-family: "Figtree", sans-serif;
+  margin-top: -3.125em;
+}
+
+.block5 h5 {
+  text-align: center;
+  font-size: 2.1875em;
+  font-weight: 800;
+  font-style: normal;
+  font-family: "Figtree", sans-serif;
+}
+
+.block5 p {
+  text-align: center;
+  font-size: 1.125em;
+  font-weight: 800;
+  font-style: normal;
+  font-family: "Figtree", sans-serif;
+  margin-top: -4.375em;
+}
+
+.grid-contact {
+  border: none;
+  padding: 0.625em 0.9375em;
+  background-color: white;
+  font-size: 1.25em;
+  color: blue;
+}
+
+.grid-service {
+  border: none;
+  padding: 0.625em 0.9375em;
+  background-color: white;
+  font-size: 1.25em;
+  color: blue;
+}
+
+.section-4 {
+    display:flex;
+    padding-top: 5em;
+
+
+}
+
+.section-4-container {
+    display: flexbox;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.section-4-image {
+    display: flex;
+    height: 33.125em;
+    width: 46.875em;
+    background-size: cover;
+    background-color: black;
+    background-image: url(Rocketman/spacex-MEW1f-yu2KI-unsplash.jpg);
+    background-position: 50%;
+    flex-basis: 65%;
+    z-index: -1;
+    margin-left: 465px;
+}   
+
+.section-4-info {
+    z-index: 1;
+    position: relative;
+    margin-left: 1090px;
+    margin-top: -225px;
+    background-image: url(Rocketman/grey-pattern.b4f896f3f272.png);
+    display: flex;
+    width: 490px;
+    height: 300px;
+    background-color: black;
+    background-size: cover;
+    display: flexbox;
+}
+
+.section-4-info h1 {
+  color: white;
+  margin-left:50px ;
+  margin-top: 60px;
+  font-weight: bolder;
+}
+
+.section-4-info p {
+  color: white;
+  margin-top: 120px;
+  margin-left: -280px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.section-4-info a {
+  position: relative;
+  color: black;
+  margin-top:195px ;
+  margin-left:-333px ;
+  background-color: white;
+  display: flexbox;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  height: 60px;
+  width: 300px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.section-5 {
+  display:flex;
+  padding-top: 5em;
+
+
+}
+
+.section-5-container {
+  display: flexbox;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.section-5-image {
+  display: flex;
+  height: 33.125em;
+  width: 46.875em;
+  background-size: cover;
+  background-color: black;
+  background-image: url(Rocketman/pablo-guerrero-pGXUwHZQ5eI-unsplash.jpg);
+  background-position: 50%;
+  flex-basis: 65%;
+  z-index: -1;
+  margin-left: 965px;
+}   
+
+.section-5-info {
+  z-index: 1;
+  position: relative;
+  margin-left: 620px;
+  margin-top: -225px;
+  background-image: url(Rocketman/grey-pattern.b4f896f3f272.png);
+  display: flex;
+  width: 490px;
+  height: 300px;
+  background-color: black;
+  background-size: cover;
+  display: flexbox;
+}
+
+.section-5-info h1 {
+  color: white;
+  margin-left:50px ;
+  margin-top: 60px;
+  font-weight: bolder;
+}
+
+.section-5-info p {
+  color: white;
+  margin-top: 120px;
+  margin-left: -315px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.section-5-info a {
+  position: relative;
+  color: black;
+  margin-top:195px ;
+  margin-left:-275px ;
+  background-color: white;
+  display: flexbox;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  height: 60px;
+  width: 300px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.section-6 {
+  display:flex;
+  padding-top: 5em;
+
+}
+
+.section-6-container {
+  display: flexbox;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.section-6-image {
+  display: flex;
+  height: 33.125em;
+  width: 46.875em;
+  background-size: cover;
+  background-color: black;
+  background-image: url(Rocketman/spacex-OHOU-5UVIYQ-unsplash.jpg);
+  background-position: 50%;
+  flex-basis: 65%;
+  z-index: -1;
+  margin-left: 465px;
+}   
+
+.section-6-info {
+  z-index: 1;
+  position: relative;
+  margin-left: 1090px;
+  margin-top: -225px;
+  background-image: url(Rocketman/grey-pattern.b4f896f3f272.png);
+  display: flex;
+  width: 490px;
+  height: 350px;
+  background-color: black;
+  background-size: cover;
+  display: flexbox;
+}
+
+.section-6-info h1 {
+color: white;
+margin-left:50px ;
+margin-top: 60px;
+font-weight: bolder;
+}
+
+.section-6-info p {
+color: white;
+margin-top: 120px;
+margin-left: -330px;
+font-size: 20px;
+font-weight: 300;
+}
+
+.section-6-info a {
+position: relative;
+color: black;
+margin-top:250px ;
+margin-left:-340px ;
+background-color: white;
+display: flexbox;
+padding: 10px 10px;
+box-sizing: border-box;
+height: 60px;
+width: 300px;
+font-size: 30px;
+text-align: center;
+}
+
+.section-7-container {
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+}
+
+.skynet {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-family: "Figtree", sans-serif;
+  font-weight: 300;
+  font-size: 1.875em;
+  margin-top:80px;
+}
+
+.section-7-button {
+  position: relative;
+  color: black;
+  display: flexbox;
+  box-sizing: border-box;
+  height: 60px;
+  font-size: 30px;
+  text-align: center;
+}
+.section-7-button a {
+  background-color: #814ebf;
+  color: white;
+  padding: 0.5rem 2rem;
+}
+
+.section-8-container {
+  height:300px ;
+  width: 100%;
+  position: relative;
+  margin-top:300px ;
+  justify-content: center;
+}
+
+.clean-rockets h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.clean-rockets h3 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.section-9-container {
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: #814ebf;
+  height: 250px;
+}
+
+.section-9-container h1 {
+  color: white;
+  margin-left: 470px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.section-9-container p {
+  color: white;
+  margin-left: 470px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.section-9-button {
+  margin-left:1500px ;
+  padding: 15px 30px;
+  background-color: white;
+  width: fit-content;
+  margin-top: -140px;
+  font-size: 30px;
+}
+
+.footer-container {
+  width: 100%;
+  position: relative;
+  margin-top: 300px;
+}
+
+.footer-border {
+  height: 250px;
+  background-color: black;
+}
+
+.footer-info {
+  color: white;
+}
+
+.footer-links {
+margin-left: 440px;
+font-size: 30px;
+}
+
+.footer-links li {
+  list-style: none
+
+}
+
+.footer-links-header {
+  margin-left: 40px;
+  margin-top: 50px; 
+  padding: 0;
+  display: inline-flex;
+  position: relative;
+  color: gray ;
+  font-size: 25px;
+}
+
+.footer-contact-header {
+  position: relative;
+  display: flex;
+  margin-top: -200px;
+  font-size: 25px;
+  padding-bottom: 15px;
+  color: gray;
+}
+
+.footer-contact {
+  margin-left: 750px;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.hours-header {
+  margin-top: -167px;
+  padding-bottom: 15px;
+  font-size: 25px;
+  color: gray;
+}
+
+.hours {
+  margin-left: 1200px;
+  font-size: 25px;
+}
+
+.social {
+  position: relative;
+  margin-left: 1600px;
+  margin-top: -80px;
+}
