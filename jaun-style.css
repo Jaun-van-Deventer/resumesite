@@ -98,7 +98,6 @@ footer {
 .project-container {
     display: flex;
     position: absolute;
-    border: 1px solid yellow;
     left: 50%;
     top: 90%;
     transform: translate(-50%, -80%);
@@ -164,7 +163,7 @@ footer {
         top: 29em;
         left: 50%;
         transform: translate(-50%);
-        border: 1px solid yellow;
+
     }
 
     .coding-skill-progress {
@@ -172,7 +171,7 @@ footer {
         position: relative;
         left: 18%;
         top: 1em;
-        border: 1px solid yellow;
+
 
 }
     
@@ -181,14 +180,14 @@ footer {
         position: relative;
         left: 50%;
         top: -27.39em;
-        border: 1px solid yellow;
+
 
     }
 
     .project-container {
         display: flex;
         position: absolute;
-        border: 1px solid yellow;
+
         left: 50%;
         top: 59em;
         transform: translate(-50%);
@@ -217,7 +216,7 @@ footer {
         justify-content: center;
         align-items: center;
         margin-bottom: 1em;
-        border: 1px solid yellow;
+
     }
     
     .profile-card {
@@ -267,7 +266,7 @@ footer {
     .project-container {
         display: flex;
         position: absolute;
-        border: 1px solid yellow;
+
         left: 50%;
         top: 93em;
         transform: translate(-50%);
@@ -343,7 +342,6 @@ footer {
     .project-container {
         display: flex;
         position: absolute;
-        border: 1px solid yellow;
         left: 50%;
         top: 120em;
         transform: translate(-50%);
