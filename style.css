@@ -71,8 +71,44 @@ body {
     color: white;
 }
 
+
 footer {
+    display: flex;
     position: absolute;
-    bottom: 0;
+    top:100% ;
     width: 100%;
+    justify-content: center;
+    }
+
+@media only screen and (max-width : 1160px) {
+    footer {
+            display: flex;
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            justify-content: center;
+            
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    footer {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        justify-content: center;
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    footer {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        justify-content: center;
+        margin-top: 25em;
+    }
 }
