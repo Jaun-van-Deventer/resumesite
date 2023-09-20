@@ -99,7 +99,6 @@ footer {
     display: flex;
     position: absolute;
     left: 50%;
-    top: 90%;
     transform: translate(-50%, -80%);
     height: 300px;
     justify-content: center;
@@ -187,7 +186,6 @@ footer {
     .project-container {
         display: flex;
         position: absolute;
-
         left: 50%;
         top: 59em;
         transform: translate(-50%);
@@ -356,5 +354,53 @@ footer {
         width: 100%;
         justify-content: center;
         margin-top: 100em;
+    }
+}
+
+@media screen and (max-height: 1081px) {
+    .project-container {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        margin-top: -16em;
+        transform: translate(-50%, -80%);
+        height: 300px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-height: 1441px) {
+    .project-container {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        top: 72em;
+        transform: translate(-50%, -80%);
+        height: 300px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-height: 1201px) {
+    .project-container {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        top: 75.5em;
+        transform: translate(-50%, -80%);
+        height: 300px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-height: px) {
+    .project-container {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        top: 75.5em;
+        transform: translate(-50%, -80%);
+        height: 300px;
+        justify-content: center;
     }
 }
