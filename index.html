@@ -1,78 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="jaun-style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="index" href="/index.html" .html">
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to our Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="jaun-resume" href="/main/jaun/jaun.html">
-</head>
-
-<body>
-
-    <!-- Navbar -->
-    <nav class="navbar bg-dark border-bottom border-body sticky-top" data-bs-theme="dark"">
-        <div class=" container-fluid">
-        <a class="navbar-brand" href="index.html">Homepage</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#"><img class="home-img"
-                        src="/main/images/5973800.png" alt="">Home</a>
-                <a class="nav-link" href="/main/jaun/jaun.html"><img class="jaun img-fluid"
-                        src="/main/images/jaun-img.jpg" alt="">Jaun van Deventer</a>
-                <a class="nav-link" href="/main/chevonne/chevonne.html"><img class="chevonne img-fluid"
-                        src="/main/images/illustration-businesswoman_53876-5857.avif" alt="">Chevonne Serfontein</a>
-            </div>
-        </div>
-        </div>
-    </nav>
-
-    <!-- Background Image -->
-    <div class="background"></div>
-    <!-- Particle Container -->
-    <div class="particle-container"></div>
-
-    <!-- Selection Cards -->
-    <div class="container text-center profile-container">
-        <div class="row">
-            <div class="col-6 mb-3 mb-sm-0">
-                <div class="card">
-                    <div class="card-body">
-                        <a href="/main/jaun/jaun.html"><img src="/main/images/jaun-img.jpg" alt="" class="img-fluid"></a>
-                        <h5 class="card-title">Jaun van Deventer</h5>
-                        <p class="card-text">Occupation: Full-Stack Developer<br>Location: Vanderbijlpark<br>Education:
-                            Self Taught</p>
-                        <a href="/main/jaun/jaun.html" class="btn btn-dark">Go to Profile</a>
-                    </div>
+  <body class="bg-dark">
+    <div class="container-fluid">
+      <div class="row">
+        <div id="portfolio"></div>
+        <div class="border-bottom fixed-top">
+          <div class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid">
+              <a class="custom-brand navbar-brand" href="/index.html"
+                ><span class="color-green">Jaun</span
+                ><span class="color-white"> van Deventer</span></a
+              >
+              <button
+                class="icon navbar-toggler border-0 shadow-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                id="toggler"
+              >
+                <span class="fa-solid fa-bars"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarNav"
+              >
+                <ul class="navbar-nav">
+                  <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link custom-nav dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  ><span class="custom-buttons"
+                    ><i class="fa-solid fa-folder-open"></i
+                    >&nbsp;&nbsp;Portfolio</span
+                  ></a
+                >
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Portfolio</a>
+                  <a class="dropdown-item" href="#">Portfolio</a>
+                  <a class="dropdown-item" href="#">Portfolio</a>
+                  <a class="dropdown-item" href="#">Portfolio</a>
                 </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <a href="/main/chevonne/chevonne.html"><img src="/main/images/chevonne.jpg" alt=""
-                                class="img-fluid"></a>
-                        <h5 class="card-title">Chevonne Serfontein</h5>
-                        <p class="card-text">Occupation: Full-Stack Developer<br>Location: Vanderbijlpark<br>Education:
-                            North West University</p>
-                        <a href="/main/chevonne/chevonne.html" class="btn btn-dark">Go to Profile</a>
+              </li> -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link custom-nav dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      ><span class="custom-buttons"
+                        ><i class="fa-solid fa-book"></i>&nbsp;&nbsp;About</span
+                      ></a
+                    >
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#"
+                        >Location: Vanderbijlpark</a
+                      >
+                      <a class="dropdown-item" href="#"
+                        >Languages: English/Afrikaans</a
+                      >
+                      <a class="dropdown-item" href="#">Age: 26</a>
                     </div>
-                </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link custom-nav dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <span class="custom-buttons"
+                        ><i class="fa-solid fa-lightbulb"></i
+                        >&nbsp;&nbsp;Projects</span
+                      >
+                    </a>
+                    <div
+                      id="projects-list"
+                      class="dropdown-menu"
+                      aria-labelledby="navbarDropdown"
+                    >
+                      <a
+                        class="dropdown-item"
+                        href="https://jaun-van-deventer.github.io/react-movie-database/"
+                        >Movie Browser</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="https://jaun-van-deventer.github.io/swapi-react-app/"
+                        >Star Wars Character Generator</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="/jaun-projects/rocketman-clone/index.html"
+                        >Rocketman Clone</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="/jaun-projects/Pig-Game/index.html"
+                        >Pig Game</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="/jaun-projects/Guess-My-Number/index.html"
+                        >Guess my Number</a
+                      >
+                      <a class="dropdown-item" href="#">Coming Soon...</a>
+                    </div>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link custom-nav dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <span class="custom-buttons">
+                        <i class="fa-solid fa-bolt"></i>&nbsp;&nbsp;Skills</span
+                      ></a
+                    >
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">JavaScript</a>
+                      <a class="dropdown-item" href="#">Git</a>
+                      <a class="dropdown-item" href="#">React</a>
+                      <a class="dropdown-item" href="#">Node.js</a>
+                      <a class="dropdown-item" href="#">Python</a>
+                      <a class="dropdown-item" href="#">Bootstrap</a>
+                      <a class="dropdown-item" href="#">CSS</a>
+                      <a class="dropdown-item" href="#">HTML</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link custom-nav dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      ><span class="custom-buttons"
+                        ><i class="fa-solid fa-address-book"></i
+                        >&nbsp;&nbsp;Contact</span
+                      ></a
+                    >
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa-solid fa-phone" style="color: #000"
+                          >&nbsp; </i
+                        >0671201099</a
+                      >
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa-solid fa-envelope" style="color: #000"
+                          >&nbsp;</i
+                        >jaunvdeventer78@gmail.com</a
+                      >
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa fa-whatsapp" style="color: #000">&nbsp;</i
+                        >0797416919</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="collapse navbar-collapse justify-content-end" id="">
+                <ul class="navbar-nav custom-sint">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://www.linkedin.com/in/jaun-van-deventer-51314628a/"
+                      ><i class="fs-3 fa-brands fa-linkedin"></i>&nbsp;</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://stackoverflow.com/users/22533378/darkvortex"
+                      ><i class="fs-3 fa-brands fa-stack-overflow"></i>&nbsp;</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://github.com/Jaun-van-Deventer"
+                      ><i class="fs-3 fa-brands fa-github"></i>&nbsp;</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
+
+        <div id="portfolio" class="col-md-3 text-white">
+          <div id="profile-img" class="img-thumbnail">
+            <img src="/main/images/jaun-img.jpg" alt="" class="img-thumbnail" />
+          </div>
+          <p class="p2">I'm <span class="p2i">Jaun</span></p>
+          <p class="p3">Full-Stack Developer</p>
+          <p class="p4"></p>
+          <p class="p5"></p>
+        </div>
+
+        <div id="content-box" class="col-md-6 text-white">
+          <div id="content" class="text-center">
+            <h3 class="text-white">About me</h3>
+            <p>
+              Greetings! I'm Jaun Van Deventer, an aspiring full-stack/web
+              developer driven by a lifelong passion for technology. From
+              tinkering with computers since the age of 12 to my current journey
+              into the world of coding, my love for the digital realm has only
+              deepened over the years. <br />
+              <br />
+              My story is one of self-driven exploration and a relentless
+              pursuit of knowledge. Fueled by an innate curiosity, I took the
+              plunge into coding this year, guided by the desire to transition
+              from my current field to a realm where my heart truly lies. Being
+              entirely self-taught has been both a challenge and a testament to
+              my commitment. While formal education may not have been in the
+              cards, my enthusiasm and quick learning pace have propelled me
+              forward. <br />
+              <br />
+              Currently well-versed in JavaScript and dipping my toes into
+              Python, I am eager to expand my linguistic repertoire, with plans
+              to incorporate additional languages in the near future. My journey
+              also involves mastering tools such as Node.js, React, and Django,
+              as I strive for proficiency in both front-end and back-end
+              development. <br />
+              <br />
+              My toolkit extends beyond programming languages to include HTML,
+              CSS, Bootstrap, and Git. These skills, combined with my hands-on
+              experience, position me as a versatile developer ready to tackle
+              diverse challenges. <br />
+              <br />
+              I am fueled by a dual love for learning and technology, and I am
+              on the lookout for opportunities to transform this passion into a
+              full-time endeavor. Join me on this exciting journey as I continue
+              to evolve and contribute to the ever-evolving landscape of web
+              development. <br />
+              <br />
+              Let's build something amazing together!
+            </p>
+          </div>
+        </div>
+
+        <footer class="col-md-3 text-white text-center" id="footer">
+          <div class="container" id="footer-content">
+            <div class="row flex-column flex-md-row">
+              <div class="col-md-12 col-xs-12">
+                <h5>Connect With Me</h5>
+                <ul
+                  class="list-inline custom-socials custom-sint justify-content-center"
+                >
+                  <li class="list-inline-item">
+                    <a
+                      class="nav-link"
+                      href="https://www.linkedin.com/in/jaun-van-deventer-51314628a/"
+                      ><i class="fs-3 fa-brands fa-linkedin"></i
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      class="nav-link"
+                      href="https://stackoverflow.com/users/22533378/darkvortex"
+                      ><i class="fs-3 fa-brands fa-stack-overflow"></i
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      class="nav-link"
+                      href="https://github.com/Jaun-van-Deventer"
+                      ><i class="fs-3 fa-brands fa-github"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <hr class="mt-4" />
+            <div class="row">
+              <div class="col-md-12 col-xs-12">
+                <p>© 2023 Jaun van Deventer.</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
 
-
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-</body>
-
+    <!-- Scripts -->
+    <script src="/main/jaun/jaun-script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/637eada58f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
